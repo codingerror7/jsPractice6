@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS AND EVENT LISTENERS:</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            font-size: 20px;
+            border: 2px solid black;
+            padding: 10px;
+            
+        }
+        button{
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 20%;
+            height: 22%;
+            text-align: center;
+            cursor: pointer;
+            font-style: italic;
+        }
+        /*button:hover{
+            color: rgb(255, 255, 255);
+            background-color: transparent;
+        }*/
+        hr{
+            width: 400px;
+        }
+        h1{
+           
+            font-size: 40px;
+            padding: 20px;
+            display: inline-block;
+            align-items: center;
+            margin-left: 36%;
+            cursor: pointer;
+        }
+        .box{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            padding: 40px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body><strong>
+<h1>THE EVENTS IN JS!</h1><hr>
+<h3>CLICK THE BELOW BUTTON TO GET THE TABLE OF 5:</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eaque tempora accusamus labore architecto ducimus libero autem, suscipit esse nostrum quod eligendi minus aut quis quaerat. Minus, ducimus ad consequuntur ipsa odit quas. Sed atque excepturi numquam doloremque. Facilis earum quidem laboriosam deleniti autem? Accusamus sapiente hic magni molestias ad.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus adipisci cum modi fugit beatae temporibus laudantium reiciendis delectus vero architecto autem natus sed quia animi neque earum rem ratione quidem, sit esse quas distinctio. Ipsa facilis dolore eos magni harum?</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est libero consequuntur cupiditate ipsa! Explicabo blanditiis ipsum deserunt nisi corporis reprehenderit cumque assumenda nostrum cum facilis itaque, enim eveniet error omnis, impedit asperiores. Beatae consectetur amet minus possimus, nesciunt, sunt aliquam dolor deleniti dolorum sit rerum dicta laboriosam maxime quasi provident dignissimos unde nisi iure. Eligendi, quis molestias? Nam, beatae autem quisquam illo sapiente deserunt assumenda reiciendis quibusdam, voluptas tempora cupiditate fugiat ipsam amet necessitatibus facilis inventore ducimus dolorum! Dolorum aliquid enim aspernatur exercitationem sunt commodi placeat, eligendi laudantium blanditiis mollitia ipsam, consectetur natus, esse voluptates ratione? Harum nam veritatis error.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati eveniet harum quo, saepe doloremque quos aspernatur necessitatibus fugit quia at quasi explicabo rerum facere! Distinctio eaque voluptates fugiat error incidunt! Neque temporibus soluta laborum porro provident repellat unde ipsam quis amet. Excepturi totam rerum dignissimos culpa dicta consequatur magni deleniti enim sed nihil harum, provident at illo nam eos quibusdam ratione. Quae aperiam temporibus consequatur quisquam rerum doloremque asperiores quia accusantium repudiandae enim tempore quaerat cumque tempora commodi non distinctio neque quasi nostrum eum, officia harum fugiat nulla eligendi? Consequuntur dignissimos atque ab obcaecati recusandae dolorum voluptates libero iusto!</p>
+<button>CLICK TO CHANGE MODE!</button>
+</strong>
+<script>
+
+    //PROGRAMME TO GET THE TABLE OF 5 BY CLICKING THE BUTTON:
+
+   // let btn1 = document.querySelector("button");
+   // btn1.onclick = () => {
+   //     console.log("YOUR DESIRED TABLE IS:");
+   //     let a = 5;
+   //     for(let i = 0; i <= 10; i++) {
+   //         console.log(a*i);
+   //     }
+   // }
+
+
+   //to know the information of an event:
+
+   //let btn1 = document.querySelector("button");
+   //btn1.onclick = (e) => {                        //we can also write evt , event
+   // console.log(e);
+   //}
+
+
+   //let btn1 = document.querySelector("button");
+   //btn1.onclick = (evt) => {
+   // console.log(evt.type);
+   //}
+
+
+   //let btn1 = document.querySelector("button");
+   //btn1.onclick = (evt) => {
+   // console.log(evt.clientX , evt.clientY);
+  // }
+
+
+  //EVENT LISTENER:
+
+  //let btn1 = document.querySelector("button");
+  //btn1.addEventlistener("click",() => {
+    //console.log("HELLO WORLD!");
+ // });
+
+
+
+ //let btn1 = document.querySelector("button");
+ //btn1.addEventListener("click" , () => {
+   // console.log("HELLO BROTHER, WELCOME!");
+    //let a = 100;
+   // for(let i = 1; i <= 10; i++) {
+     //   console.log(i);
+    //}
+ //});
+
+
+
+// let btn1 = document.querySelector("button");
+// btn1.addEventListener("mouseover" , () => {
+//    console.log("THIS IS THE PLACE TO LEARN JS!");
+//    let a = 78;
+//    for(let i = 1; i <= 10; i++) {
+//        console.log(a * i);
+//    }
+// })
+
+
+
+//PROGRAMME TO PERFORM ADDITION OF NUMBERS:
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("click",() => {
+//    let a = 12;
+//    let b = 18;
+//    let c = 12;
+//    let d = 18;
+//    let e = 100;
+//    let f = 56;
+//    let g = a + b + c + d + e + f;
+//    let h = g;
+//    console.log("YOUR SUM IS:");
+//    console.log(h);
+//})
+
+
+
+//MULTIPLE PROGRAMMES IN A SINGLE EVENT SELECTOR:
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("click" , () => {
+//    let a = 45;
+//    let b = 100;
+//    let c = 101;
+//    let d = 45;
+//    let e = 56;
+//    let f = 21;
+//    let g = a * b * c * d * e * f;
+//    console.log("YOUR PRODUCT IS:");
+//    console.log(g);
+//    let name = "MY NAME IS SUJAL SARASWAT AND I WANT TO BE A CODER.";
+//    let name1 = " I WILL PRACTICE VERY HARD TO BECOME A GOOD PROGRAMMER.";
+//    let name2 = " I CAN DO ANYTHING TO BECOME A CODER";
+//    let name3 = name + name1 + name2;
+//    console.log("YOUR CONCATENATED STRING IS:");
+//    console.log(name3);
+//    let a1 = 56;
+//    let a2 = 10010;
+//    let a3 = 12233;
+//    let a4 = 89780;
+//    let a5 = 924431;
+//    let a6 = a1 + a2 + a3 + a4 + a5;
+//    console.log("THE SUM OF NUMBERS IS:")
+//    console.log(a6);
+//    let employee = {
+//        name:"Sujal",
+//        ID:90908,
+//        Profession:"web developer",
+//        "Phone Number" : 9300446947,
+//        Email:"saraswatsujal@Gmail.com",
+//        "Blood Group" : "A+",
+//    };
+//    console.log(employee);
+//})
+
+
+//PROGRAMME TO CHANGE THE TEXT OF BUTTON WHEN CLICKED BY USER:
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("click" , () => {
+//    btn1.innerText = "YOU ARE CLICKING SO BADLY!!!!!";
+//})
+
+
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("mouseover" , () => {
+//    btn1.innerText = 'SO HERE YOU ARE I AM WAITING FOR YOU FROM A LOT OF TIME!!!!!';
+//    btn1.style.backgroundColor = "black";
+//    btn1.style.color = "white";
+//    btn1.style.width = "50%";
+//    btn1.style.height = "50%"
+//})
+
+
+
+//let para = document.querySelector("body");
+//para.addEventListener("mouseover",() => {
+//    para.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, itaque voluptatibus repudiandae ea distinctio saepe amet temporibus velit earum soluta nesciunt officia ullam dicta nam veniam nisi neque incidunt architecto iusto doloremque perferendis inventore culpa, pariatur maiores. Officia, rem, nobis tempora aliquid sunt aliquam, labore optio reprehenderit eius blanditiis eaque ipsa laboriosam voluptatum eum cumque temporibus recusandae voluptatibus exercitationem odit iusto amet placeat veniam. Nihil facere dolores iure ratione, pariatur quasi mollitia doloremque ab placeat, sint eaque reprehenderit et architecto nostrum animi sequi saepe dolore!";
+//   para.style.padding = "40px";
+//    para.style.margin = "40px";
+//    para.style.color = "yellow";
+//    para.style.backgroundColor = "red";
+//    para.style.border = "2px solid white";
+//    para.style.borderRadius = "50px";
+//    para.style.width = "100%";
+//    para.style.textAlign = "center";
+//    para.style.fontSize = "30px";
+    
+//})
+
+
+
+//PROGRAMME TO CHANGE THE COLOR OF BACKGROUND BY CLICKING THE ELEMENTS:
+//let head = document.querySelector("h1");
+//head.addEventListener("click",() => {
+//    document.body.style.backgroundColor = "black";
+//    document.body.style.color = "black";
+//    document.button.style.backgroundColor = "black";
+//})
+//let head2 = document.querySelector("h3");
+//head2.addEventListener("click",() => {
+//    document.body.style.backgroundColor = "white";
+//    document.body.style.backgroundColor = "white"
+//});
+//let para = document.querySelector("p");
+//para.addEventListener("click" , () => {
+//    document.body.style.backgroundColor = "yellow";
+//    document.body.style.color = "yellow";
+//})
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("click",() => {
+//    document.body.style.backgroundColor = "red";
+//   document.body.style.color = "red";
+//})
+
+
+
+//PROGRAMME OF LIGHT MODE AND DARK MODE:
+//let btn1 = document.querySelector("button");
+//let currMode = "light";
+//btn1.addEventListener("click" , () => {
+//    if(currMode === "light") {
+//        currMode = "dark";
+//        btn1.innerText = "Turn to light mode!";
+//        btn1.style.backgroundColor = "white";
+//        btn1.style.color = "black";
+//        console.log("DARK MODE APPLIED!");
+//        document.body.style.backgroundColor = "black";
+//        document.body.style.color = "white";
+//    }
+//    else {
+//        currMode = "light";
+//        console.log("LIGHT MODE APPLIED!");
+//btn1.innerText = "Turn to dark mode!"
+//btn1.style.backgroundColor = "black";
+//btn1.style.color = "white";
+//document.body.style.backgroundColor = "white";
+//document.body.style.color = "black";
+//    }
+//    console.log(currMode);
+//})
+
+
+
+//TO CHANGE THE COLOR OF BODY THROUGH MOUSEENTER AMD MOUSELEAVE:
+//let body = document.querySelector("body");
+
+//body.addEventListener("mouseenter" , () => {
+//    document.body.style.backgroundColor = "green";
+//    document.body.style.color = "white";
+//})
+//body.addEventListener("mouseleave" , () => {
+//    document.body.style.backgroundColor = "red";
+//    document.body.style.color = "yellow";
+//})
+
+
+ 
+//ANOTHER PROGRAMME TO APPLY DARK MODE AND LIGHT MODE:
+//let btn1 = document.querySelector("button");
+//let currMode = "light";
+//btn1.addEventListener("click" , () => {
+//    if(currMode === "light") {
+//        currMode = "dark";
+//        console.log(currMode);
+//        document.body.style.backgroundColor = "black";
+//        document.body.style.color = "white";
+//        document.body.style.borderColor = "white";
+//        btn1.style.color = "white";
+//        btn1.style.backgroundColor = "transparent";
+//        btn1.style.borderColor = "white";
+        
+//    }
+//    else {
+//        currMode = "light";
+//        console.log(currMode);
+//        document.body.style.backgroundColor = "white";
+//        document.body.style.color = "black";
+//        document.body.style.borderColor = "black";
+//        btn1.style.color = "black";
+//        btn1.style.borderColor = "black";
+
+//    }
+//})
+
+
+
+
+//let btn1 = document.querySelector("button");
+//btn1.addEventListener("click" , () => {
+//    document.body.style.backgroundColor = "red";
+//    document.body.style.color = "white";
+//    document.body.style.fontSize = "40px";
+//    document.body.style.fontStyle = "italic";
+//    btn1.style.backgroundColor = "transparent";
+//    btn1.style.color = "white";
+//    btn1.style.borderColor = "white";
+//})
+//btn1.addEventListener("dblclick" , () => {
+//    document.body.style.backgroundColor = "yellow";
+//    document.body.style.color = "black";
+//    document.body.style.fontSize = "20px";
+//   document.body.style.fontStyle = "italic";
+//    btn1.style.backgroundColor = "transparent";
+//    btn1.style.color = "black";
+//    btn1.style.borderColor = "black";
+
+//})
+
+
+//let newBtn = document.createElement("button");
+
+   </script>
+   </body>
+   </html>
+   
+
+   
+   
+   
